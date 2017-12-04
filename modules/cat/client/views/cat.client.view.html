@@ -1,0 +1,25 @@
+<section>
+	<div class="col-md-6">
+		<json-formatter json="items" open="2"></json-formatter>
+	</div>
+	<div class="col-md-6">
+		<nvd3 options="chartOptions" data="chartData"></nvd3><br>
+	    <table ng-table="tableParams1" class="table">
+	        <tr ng-repeat="provider in providersData">
+	            <td title="'Provider'" sortable="'name'" style="width:75%">
+	                {{provider.name}}</td>
+	            <td title="'No of Devices'" sortable="'num'">
+	                {{provider.num}}</td>
+	        </tr>
+	    </table>
+
+	    <table ng-table="tableParams1" class="table">
+	        <tr ng-repeat="owner in ownersData">
+	            <td title="'Owner'" sortable="'name'" style="width:75%">
+	                {{owner.name}}</td>
+	            <td title="'No of Devices'" sortable="'num'">
+	                {{owner.num}}</td>
+	        </tr>
+	    </table>
+	</div>
+</section>

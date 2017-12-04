@@ -1,3 +1,7 @@
+# Local Files
+pwd.txt
+schemas
+
 # OS
 # ===========
 .DS_Store
@@ -16,12 +20,14 @@ app/tests/coverage/
 .idea/
 coverage/
 
+!public/lib/json-formatter
+
 # MEAN.js app and assets
 # ======================
 public/dist/
 uploads
 modules/users/client/img/profile/uploads
-config/env/local.js
+# config/env/local.js
 *.pem
 
 # Ignoring MEAN.JS's gh-pages branch for documenation
